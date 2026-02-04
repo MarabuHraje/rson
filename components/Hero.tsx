@@ -20,19 +20,22 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl">
           
-          {/* App Notification Banner - Now Clickable */}
+          {/* App Notification Banner - Responsive Update */}
           <a 
             href="https://revizone.cz" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex flex-wrap items-center gap-3 bg-primary-card/90 border border-border rounded-full pl-2 pr-6 py-2 mb-8 backdrop-blur-md hover:bg-primary-light transition-all cursor-pointer group hover:border-accent/50"
+            className="inline-flex items-start sm:items-center gap-3 bg-primary-card/90 border border-border rounded-2xl md:rounded-full pl-2 pr-4 md:pr-6 py-2.5 md:py-2 mb-8 backdrop-blur-md hover:bg-primary-light transition-all cursor-pointer group hover:border-accent/50 max-w-full"
           >
-            <div className="bg-accent rounded-full p-1.5 animate-pulse">
+            <div className="bg-accent rounded-full p-1.5 animate-pulse shrink-0 mt-0.5 sm:mt-0">
               <Smartphone size={16} className="text-text-dark" />
             </div>
-            <span className="text-text-main text-sm font-medium">
-              Připravujeme pro Vás novou aplikaci. <span className="text-accent group-hover:underline ml-1">Pro více informací klikněte</span>
-            </span>
+            <div className="text-text-main text-xs sm:text-sm font-medium leading-tight sm:leading-normal">
+              Připravujeme pro Vás novou aplikaci. 
+              <span className="text-accent group-hover:underline block sm:inline sm:ml-1 mt-1 sm:mt-0 font-bold sm:font-medium">
+                Pro více informací klikněte
+              </span>
+            </div>
           </a>
 
           <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6 drop-shadow-lg">
